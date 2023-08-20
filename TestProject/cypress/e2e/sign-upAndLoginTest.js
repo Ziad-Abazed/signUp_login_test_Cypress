@@ -28,11 +28,11 @@ describe('signup and log in test', () => {
 
         cy.get('#AccountFrm_city').type("amman")
 
-        cy.get('#AccountFrm_zone_id').select('Aberdeen')
+        cy.get('#AccountFrm_country_id').select("Jordan")
+
+        cy.get('#AccountFrm_zone_id').select('Irbid')
 
         cy.get('#AccountFrm_postcode').type("00962")
-
-        cy.get('#AccountFrm_country_id').select("United Kingdom")
 
         cy.get('#AccountFrm_loginname').type(loginName)
 
